@@ -14,7 +14,8 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      images: dataIndex.idexData
+      images: dataIndex.indexData,
+      Index:dataIndex.index
     })
   },
   getCurrent: function (e) {

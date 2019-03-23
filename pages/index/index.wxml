@@ -8,26 +8,28 @@
     </block>
   </swiper>
 
-  <view>
+  <view class='index-container'>
+    <block wx:for="{{Index}}">
+      <view class='index-border'>
+        <view class='avater-name'>
+          <image class='avaterImg' src='{{item.avater}}'></image>
+          <text class='name'>{{item.name}}</text>
+        </view>
 
-    <view>
-      <image></image>
-      <text></text>
-    </view>
+        <view class='title-article'>
+          <text class='title'>{{item.title}}</text>
+          <image class='TA-img' src='{{item.image}}'></image>
+          <text class='article'>{{item.article}}</text>
+        </view>
 
-    <view>
-      <text></text>
-      <image></image>
-      <image></image>
-    </view>
-
-    <view>
-      <image></image>
-      <text></text>
-      <image></image>
-      <text></text>
-    </view>
-
+        <view class='star-view'>
+          <image src='{{item.chatimg}}'></image>
+          <text>{{item.chatnumb}}</text>
+          <image class='dis' src='{{item.viewimg}}'></image>
+          <text>{{item.viewnumb}}</text>
+        </view>
+      </view>
+    </block>
   </view>
 
 </view>
