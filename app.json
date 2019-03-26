@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/firstshop/firstshop"
+    "pages/firstshop/firstshop",
+    "pages/mine/mine"
   ],
   "window":{
     "backgroundTextStyle":"light",
