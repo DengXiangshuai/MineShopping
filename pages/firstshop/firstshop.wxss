@@ -69,3 +69,14 @@
   color: #666;
   font-size: 26rpx;
 }
+
+.class-list{
+  white-space: nowrap;
+}
+
+.class-list .-class{
+  display: inline-block;
+  width: 190px;
+  border-radius: 20px;
+  margin: 1em 0.5em
+}

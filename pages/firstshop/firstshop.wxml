@@ -1,4 +1,11 @@
 <!--pages/firstshop/firstshop.wxml-->
+
+<scroll-view class='class-list' scroll-x="true">
+  <block wx:for="{{images}}">
+    <image class='-class' src='{{item}}'></image>
+  </block>
+</scroll-view>
+
 <view class='index-container'>
     <block wx:for="{{Index}}">
       <view class='index-border'>

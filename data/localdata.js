@@ -39,6 +39,8 @@ var Indexdata = [{
   viewnumb: "23"
 }]
 
+
+
   module.exports = {
     indexData: imgUrls,
     index: Indexdata
