@@ -1,31 +1,42 @@
 <!--pages/firstshop/firstshop.wxml-->
+<swiper indicator-dots="true" autoplay='true' bindchange="getCurrent" interval="3000">
+  <block wx:for="{{Index}}" wx:for-index="idx">
+    <view data-id='1'>
+      <swiper-item>
+        <image src='{{item.image}}'></image>
+      </swiper-item>
+    </view>
+  </block>
+</swiper>
+
+<view class='box'>
+  <text class='box-title'>推荐商品</text>
+  <view class='box-litter'>
+    <text>查看详情</text>
+    <image src='/images/icon/arrow-right.png'></image>
+  </view>
+</view>
+
+
+<scroll-view class='class-list' scroll-x="true">
+  <block wx:for="{{images}}" wx:for-index="idx">
+    <view id='{{idx}}' class='-class'>
+      <image  src='{{item}}'></image>
+    </view>
+  </block>
+</scroll-view>
+
+<view class='box'>
+  <text class='box-title'>最近观看</text>
+  <view class='box-litter'>
+    <text>查看详情</text>
+    <image src='/images/icon/arrow-right.png'></image>
+  </view>
+</view>
+
 
 <scroll-view class='class-list' scroll-x="true">
   <block wx:for="{{images}}">
     <image class='-class' src='{{item}}'></image>
   </block>
 </scroll-view>
-
-<view class='index-container'>
-    <block wx:for="{{Index}}">
-      <view class='index-border'>
-        <view class='avater-name'>
-          <image class='avaterImg' src='{{item.avater}}'></image>
-          <text class='name'>{{item.name}}</text>
-        </view>
-
-        <view class='title-article'>
-          <text class='title'>{{item.title}}</text>
-          <image class='TA-img' src='{{item.image}}'></image>
-          <text class='article'>{{item.article}}</text>
-        </view>
-
-        <view class='star-view'>
-          <image src='{{item.chatimg}}'></image>
-          <text>{{item.chatnumb}}</text>
-          <image class='dis' src='{{item.viewimg}}'></image>
-          <text>{{item.viewnumb}}</text>
-        </view>
-      </view>
-    </block>
-  </view>
