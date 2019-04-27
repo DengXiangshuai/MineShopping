@@ -1,13 +1,20 @@
 /* pages/firstshop/firstshop.wxss */
+page{
+  background: #ededed   /*e8e8e8*/
+}
+
 swiper image{
   width: 100%
 }
-
+.bigbox{
+  margin-bottom: 1em;
+  background: #ffffff;
+}
 .box{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 10px 10px
+  padding: 10px 10px;
 }
 
 .box text{

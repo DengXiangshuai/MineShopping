@@ -8,35 +8,40 @@
     </view>
   </block>
 </swiper>
-
-<view class='box'>
-  <text class='box-title'>推荐商品</text>
-  <view class='box-litter'>
-    <text>查看详情</text>
-    <image src='/images/icon/arrow-right.png'></image>
-  </view>
-</view>
-
-
-<scroll-view class='class-list' scroll-x="true">
-  <block wx:for="{{images}}" wx:for-index="idx">
-    <view id='{{idx}}' class='-class'>
-      <image  src='{{item}}'></image>
+<view class='bigbox'>
+  <view class='box'>
+    <text class='box-title'>推荐商品</text>
+    <view class='box-litter'>
+      <text>查看详情</text>
+      <image src='/images/icon/arrow-right.png'></image>
     </view>
-  </block>
-</scroll-view>
-
-<view class='box'>
-  <text class='box-title'>最近观看</text>
-  <view class='box-litter'>
-    <text>查看详情</text>
-    <image src='/images/icon/arrow-right.png'></image>
   </view>
+
+
+  <scroll-view class='class-list' scroll-x="true">
+    <block wx:for="{{images}}" wx:for-index="idx">
+      <view data-jianid='{{idx}}' class='-class' bindtap='moretap'>
+        <image src='{{item}}'></image>
+      </view>
+    </block>
+  </scroll-view>
 </view>
 
+<view class='bigbox'>
+  <view class='box'>
+    <text class='box-title'>最近观看</text>
+    <view class='box-litter'>
+      <text>查看详情</text>
+      <image src='/images/icon/arrow-right.png'></image>
+    </view>
+  </view>
 
-<scroll-view class='class-list' scroll-x="true">
-  <block wx:for="{{images}}">
-    <image class='-class' src='{{item}}'></image>
-  </block>
-</scroll-view>
+
+  <scroll-view class='class-list' scroll-x="true">
+    <block wx:for="{{images}}" wx:for-index="idx">
+      <view data-historyid='{{idx}}' class='-class' bindtap='moretap'>
+        <image src='{{item}}'></image>
+      </view>
+    </block>
+  </scroll-view>
+</view>
