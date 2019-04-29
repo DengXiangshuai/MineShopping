@@ -12,21 +12,27 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    
+  onLoad: function(options) {
+
     this.setData({
       images: dataIndex.indexData,
       Index: dataIndex.index
     })
   },
 
-  moretap : function(e){
-   var Jianid =  e.currentTarget.dataset.jianid;
-   var Historyid =  e.currentTarget.dataset.historyid;
+  moretap: function(e) {
+    var Jianid = e.currentTarget.dataset.jianid;
+    console.log(Jianid);
+    this.setData({
+      Jianid: Jianid
+    })
+  },
 
-  this.setData({
-    Jianid : Jianid,
-    Historyid :Historyid
-  })
+  historytap: function(e) {
+    var Historyid = e.currentTarget.dataset.historyid;
+    console.log(Historyid);
+    this.setData({
+      Historyid: Historyid
+    })
   }
 })

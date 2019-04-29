@@ -108,8 +108,13 @@ swiper image{
 }
 
 .class-list .-class{
-  display: inline-block;
-
+ display: inline-block;
+}
+.photo-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 0.5em
 }
 .class-list .-class image{
   width: 190px;

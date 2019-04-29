@@ -20,8 +20,13 @@
 
   <scroll-view class='class-list' scroll-x="true">
     <block wx:for="{{images}}" wx:for-index="idx">
-      <view data-jianid='{{idx}}' class='-class' bindtap='moretap'>
-        <image src='{{item}}'></image>
+      <view class='-class'>
+
+        <view data-jianid='{{idx}}' bindtap='moretap' class='photo-text'>
+          <image src='{{item}}'></image>
+          <text>aaaaaa</text>
+        </view>
+
       </view>
     </block>
   </scroll-view>
@@ -39,8 +44,13 @@
 
   <scroll-view class='class-list' scroll-x="true">
     <block wx:for="{{images}}" wx:for-index="idx">
-      <view data-historyid='{{idx}}' class='-class' bindtap='moretap'>
-        <image src='{{item}}'></image>
+         <view class='-class'>
+
+        <view data-Historyid='{{idx}}' bindtap='historytap' class='photo-text'>
+          <image src='{{item}}'></image>
+          <text>aaaaaa</text>
+        </view>
+
       </view>
     </block>
   </scroll-view>
