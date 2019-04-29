@@ -1,0 +1,25 @@
+<!--pages/order_info/order_info.wxml-->
+<view class='container'>
+  <view class='pay_address'>
+    <view class='pay_icon'>
+      <image src='/images/icon-ddfk.png'></image>
+    </view>
+    <view class='pay_title'>
+      <text class='wait_pay'>待支付</text>
+      <text class='warm'>请于24小时之前完成支付，超时订单关闭</text>
+    </view>
+  </view>
+  <view class='address'>
+    <view class='address_icon'>
+      <image src='/images/icon-address.png'></image>
+    </view>
+    <view class='buyer'>
+      <view class='buyer_name_phone'>
+      <text class='buyer_name'>邓祥帅</text>
+      <text class='buyer_phone'>18743064311</text>
+      </view>
+      <text class='buyer_address'>上海市浦东新区</text>
+    </view>
+  </view>
+  
+</view>
